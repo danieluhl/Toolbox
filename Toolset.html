@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+
+	<script src="https://raw.github.com/Modernizr/Modernizr/master/modernizr.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="Toolset.css" />
+
+	<style type="text/css">
+		
+		.boxed
+		{
+			border: 1px solid hsl(200, 50%, 50%);
+		}
+
+		.cols
+		{
+			padding: .5em 1em;
+		}
+
+		.cols .col
+		{
+			margin: .5em 0;
+			background: hsl(130, 40%, 85%);
+		}
+
+		.cols .col:nth-child(odd)
+		{
+			background: hsl(230, 40%, 85%);
+		}
+
+	</style>
+
+</head>
+	<body>
+		<header></header>
+		<section class="wrapper mal">
+
+			<h1>Text</h1>
+			
+			<h2>paragraph</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h2>small or .small</h2>
+			<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+
+			<h2>em or .em or i (emphasis or italic)</h2>
+			<em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em>
+
+			<h2>strong or b or .b</h2>
+			<strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong>
+
+			<h2>code or pre</h2>
+			<code>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</code>
+
+			<h2>del</h2>
+			<p class="del">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h2>big</h2>
+			<p class="big">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<h1>Headings</h1>
+			<h2>Headings</h2>
+			<h3>Headings</h3>
+			<h4>Headings</h4>
+			<h5>Headings</h5>
+			<h6>Headings</h6>
+
+
+			<h1>Clearfix</h1>
+			<p>use this when you have a float:none; container with float:left; or float:right; elements inside</p>
+			<h2>Busted :(</h2>
+			<div class="boxed"><span style="float: left;">float: left;</span><span style="float: right;">float: right;</span></div>
+			<h2>Fixed :)</h2>
+			<div class="boxed clearfix"><span style="float: left;">float: left;</span><span style="float: right;">float: right;</span></div>
+
+			<h1>Colums (fluid grid)</h1>
+			<div class="boxed cols clearfix">
+				<div class="col col-1_1"><h2>col-1_1</h2></div>
+
+				<div class="col col-1_2"><h2>col-1_2</h2></div>
+				<div class="col col-1_2"><h2>col-1_2</h2></div>
+
+				<div class="col col-1_3"><h2>col-1_3</h2></div>
+				<div class="col col-1_3"><h2>col-1_3</h2></div>
+				<div class="col col-1_3"><h2>col-1_3</h2></div>
+
+				<div class="col col-1_4"><h2>col-1_4</h2></div>
+				<div class="col col-1_4"><h2>col-1_4</h2></div>
+				<div class="col col-1_4"><h2>col-1_4</h2></div>
+				<div class="col col-1_4"><h2>col-1_4</h2></div>
+
+				<div class="col col-1_5"><h2>col-1_5</h2></div>
+				<div class="col col-1_5"><h2>col-1_5</h2></div>
+				<div class="col col-1_5"><h2>col-1_5</h2></div>
+				<div class="col col-1_5"><h2>col-1_5</h2></div>
+				<div class="col col-1_5"><h2>col-1_5</h2></div>
+
+				<div class="col col-1_6"><h2>col-1_6</h2></div>
+				<div class="col col-1_6"><h2>col-1_6</h2></div>
+				<div class="col col-1_6"><h2>col-1_6</h2></div>
+				<div class="col col-1_6"><h2>col-1_6</h2></div>
+				<div class="col col-1_6"><h2>col-1_6</h2></div>
+				<div class="col col-1_6"><h2>col-1_6</h2></div>
+
+				<p>Others include: col-2_3, col-4_6, col-2_4, col-3_6, col-3_4, col-2_5, col-3_5, col-4_5, col-5_6</p>
+			</div>
+
+			<h1>image replacement</h1>
+			<p>Use this for SEO when you want an inline element (usually header or logo) to be text but look like an image</p>
+			<h2 class="ir" style="background: url('http://b.vimeocdn.com/ps/274/053/2740531_300.jpg') 0 50%; width: 300px; height: 80px;">UGMONK</h2>
+
+			<h1>floats</h1>
+			<h2 class="fl">fl (float left)</h2>
+			<h2 class="fr">fr (float right)</h2>
+			<h2 class="ffluid">ffluid</h2>
+			<h2 class="cl">cl (clear left)</h2>
+			<h2 class="cr">cr (clear right)</h2>
+
+			<h1>display</h1>
+			<h2>hidden & invisible</h2>
+			<h2 class="hidden">hidden</h2>
+			<h2 class="invisible">invisible</h2>
+			<h2 class="block">block</h2>
+			<h2 class="inline">inline</h2>
+
+			<h1>Vertical Center</h1>
+			<div class="vcenter" style="height: 100px; width: 300px; background: hsl(130, 40%, 85%);">
+				<div class="outer">
+					<h2 class="inner">vcenter</h2>
+				</div>
+			</div>
+
+			<div class="tcenter" style="width: 300px;"><h2 class="hcenter">hcenter</h2></div>
+			<div class="tleft" style="width: 300px;"><h2>tleft</h2></div>
+			<div class="tright" style="width: 300px;"><h2>tright</h2></div>
+			<div class="tupper" style="width: 300px;"><h2>tupper</h2></div>
+			<div class="tlower" style="width: 300px;"><h2>TLOWER</h2></div>
+			<div class="tnormal" style="width: 300px;"><h2>tnormal</h2></div>
+			<img class="tmiddle" src="http://b.vimeocdn.com/ps/274/053/2740531_300.jpg" />
+			<h2 class="tmiddle">tmiddle</h2>
+			<h2 class="ttop">ttop</h2>
+			<h2 class="tbottom">tbottom</h2>
+
+			<h1>clickable</h1>
+			<div class="boxed clickable" style="width:200px;height:200px;"></div>
+
+		</section>
+		<footer></footer>
+	</body>
+</html>
+
+
+
